@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int lunghezza(char* @zeroterm c){
+	int i = 0;
+	while(c[i]!= '\0'){
+		i++;
+	}
+	return i;
+}
+
+int main(void){
+	char ciao[5] @zeroterm = {'1','2','3','4','\0'};
+	printf("%d\n",lunghezza(ciao));
+	char h[3] @zeroterm ={'1','2',0};
+	printf("%d\n",lunghezza(h));
+}

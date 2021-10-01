@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int a = 10;
+	int * x;
+	if (2<1) x = &a;
+	else x = NULL;
+	int @ ptr;
+	if (x!= NULL) {ptr = x;
+	*ptr = 2;
+	}
+	printf("%d",a);
+	return 0;
+}

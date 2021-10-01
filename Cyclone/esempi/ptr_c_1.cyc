@@ -1,0 +1,18 @@
+#include<string.h>
+#include<stdio.h>
+
+const char ? foo(char ?s){
+       char ?c = malloc(sizeof(char)*numelts(s));
+       strcpy(c,s);
+       return strchr(c,'x');
+
+}
+
+int main (int argc, char *@fat *@fat argv){
+
+     const char ? c = foo(argv[1]);
+     c++;
+     printf("sottostringa %s\n",c);
+     return (*c);
+     
+}

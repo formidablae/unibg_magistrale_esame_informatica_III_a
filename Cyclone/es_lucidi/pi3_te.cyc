@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+char * @nozeroterm epd ( void )
+{
+    char* @nozeroterm ca = new {'i','I'};
+    return ca;
+}
+int main(){
+	printf("L'esame più difficile è %s",epd());
+	return 0;
+	
+}
+

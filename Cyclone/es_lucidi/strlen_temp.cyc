@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int lunghezza(int* @fat c){
+	int i = 0;
+//	while(c[i]!= 0){
+//	while(*(c+i) != 0){
+	while(i < numelts(c)){
+		i++;
+	}
+	return i;
+}
+
+int main(void){
+	int ciao[5] = {1,2,3,4,0};
+	printf("%d\n",lunghezza(ciao));
+	int h[3]={1,2,3};
+	printf("%d\n",lunghezza(h));
+}

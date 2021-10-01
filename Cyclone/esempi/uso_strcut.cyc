@@ -1,0 +1,20 @@
+#include "stdio.h"
+#include "stdlib.h"
+
+struct IntPair { int x; int y; };
+
+struct IntPair * same(int z) {
+    struct IntPair * ans =
+          malloc(sizeof(struct IntPair));
+    ans->x = z;
+    ans->y = z;
+    return ans;
+}
+
+int main(){
+	struct IntPair * p = same(3);
+        printf("value %d",(*p).x);
+	return 0;
+
+}
+

@@ -1,0 +1,14 @@
+
+void f(int@ p){}
+
+int main(){
+    int x = 4;
+    int * p = &x;
+    int @ nnp = &x;
+    nnp++;
+    if (x > 2) p = NULL;
+    else p = &x;
+    f(p);
+    *p = 90;
+    return 0;
+}

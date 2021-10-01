@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+// SBAGLIATO ....
+int  sum1(int * @notnull p)
+{
+	return *p + sum1(p+1);
+}
+
+// sbagliato non posso usare puntatori thin puri
+int sum1b(int n, int * @notnull p){
+   if (n == 0) return 0;
+   else return *p + sum1b(n-1, p+1);
+}
+
+int  sumzt(int * @notnull @zeroterm p)
+{
+	if (*p == 0)  return 0;
+	else return *p + sumzt(++p);
+}
+
+int  sumnumelts(tag_t<`n> num, int* @notnull @numelts(valueof(`n)) p)
+{
+	if (valueof(`n)  == 0)  return 0;
+	return p[0] + sumnumelts(valueof(`n) -1, p+1);
+}
+
+int  sumfat(int * @notnull @fat p)
+{
+	if (numelts(p) == 1)  return *p;
+	return *p + sumfat(p+1);
+}
+
+int main(){
+	int prova[5] = {1,2,3,4,7};	
+//	printf("somma %d",sum1b(5,(int * @notnull)prova));
+
+    int * @zeroterm @notnull t = new {1,2,3,4,0};
+	printf("somma %d\n",sumzt(t));
+	
+//	printf("somma %d",sumnumelts(5,prova));
+
+	printf("somma %d\n",sumfat(prova));
+	return 0;
+	
+}
+

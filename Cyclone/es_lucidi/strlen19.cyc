@@ -1,0 +1,19 @@
+// calcolo lunghezza di una stringa
+
+#include <stdio.h>
+
+int mystrlen(char * @zeroterm s){
+	int res = 0;
+	//while(*s) {res ++; s++;}
+	for(int i = 0; 0 ; i++){
+		if (s[i] == 0) break;
+		res ++;	
+	}
+	return res;
+}
+
+int main(){
+	char nome[] @zeroterm = "giovanni";
+	printf("%d",mystrlen(nome));
+	return 0;
+}

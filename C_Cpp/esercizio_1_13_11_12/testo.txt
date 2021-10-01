@@ -1,0 +1,6 @@
+1. Bubble sorter
+Scrivi una classe BubbleSorter che ordina un array di interi.
+BubbleSorter ha un costruttore che prende un array di interi tramite puntatore (int*)
+Ha un metodo sort che quando chiamato ordina l'array (nota: se non è stato già ordinato) senza però modificare l'array originale (deve quandi fare una copia).
+Ha un metodo getArrayOrdinato che restituisce un array ordinato.
+Separa il .h e il .cpp di BubbleSorter e scrivi un file di prova con qualche array.

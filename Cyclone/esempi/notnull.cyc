@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+   int x = 2;
+   int * @notnull ptr = &x;
+   int @ p2 = &x;
+  
+   
+   ptr = p2;
+
+   *ptr = 3;
+   
+   printf("%d\n",x);
+   return 1;
+} 

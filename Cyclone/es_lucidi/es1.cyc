@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() { 
+    int x = 3; 
+    int *y = &x; // y punta alla cella di y
+    *y = *y + 1;
+    printf("%d\n",x); 
+    return 0; 
+}

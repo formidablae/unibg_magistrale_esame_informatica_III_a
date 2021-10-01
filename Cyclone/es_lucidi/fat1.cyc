@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int mystrlen(const char ?@nozeroterm s){
+   int i,n;
+   if (!s) return 0;
+   n = numelts(s);
+   for (i = 0; i <n; i++,s++)
+     if (!*s) return i;
+   return n;
+}
+
+int main(){
+	char a[7] = "angelo";
+	printf("la stringa %s lunga %d\n",a,mystrlen(a));
+
+	char? s = new{'p','i','p','p','o',0};
+	int l = mystrlen(s);
+	printf("la stringa %s lunga %d\n",s,l);
+
+	char? @nozeroterm s2 = new{'c','i','a','o'};
+	printf("la stringa %s lunga %d\n",s2,mystrlen(s2));
+
+
+}

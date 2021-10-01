@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int mystrlen(const char * @fat s){
+   if (!s) return 0;
+   int n = numelts(s);
+   int i;
+   for (i = 0; i < n; i++){
+   		if (*(s+i) == '\0') break;
+   }
+   return i;
+}
+
+int main(){
+	int l;
+	//char * @fat ps = new {'a','b','\0'};
+	char name[4] = "abc";
+	char * @fat ps = name;
+	l = mystrlen(ps);
+	printf("la stringa %s lunga %d\n",ps,l);
+/*	char s2[3];
+	s2[0]='A';
+	s2[1]='B';
+	s2[2]='C';
+	l = mystrlen(s2);
+	printf("la stringa %s lunga %d\n",s2,l);*/
+}

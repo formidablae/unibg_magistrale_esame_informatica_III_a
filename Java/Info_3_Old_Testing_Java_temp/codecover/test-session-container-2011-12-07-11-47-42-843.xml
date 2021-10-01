@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1323254862825" TestSessionContainerId="9548c445-e277-4e78-947d-bfa42866e462" version="1.0">
+<SrcFileList>
+<SrcFile Content="public class ProvaSegnali {&#13;&#10;&#13;&#10;&#9;static public boolean go(int x, int y, boolean c) {&#13;&#10;&#9;&#9;int z = y * 2 + 10;&#13;&#10;&#9;&#9;int j = x + 3;&#13;&#10;&#9;&#9;if ((z &gt; 0 &amp;&amp; j == 70) || c) {&#13;&#10;&#9;&#9;&#9;return true;&#13;&#10;&#9;&#9;}&#13;&#10;&#9;&#9;return false;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#9;public static void main(String[] args) {&#13;&#10;&#9;&#9;// copertura istruzioni&#13;&#10;&#9;&#9;go(7, 0, true); // copre return true&#13;&#10;&#9;&#9;go(7, -10, false); // copre return false&#13;&#10;&#9;&#9;// copertura archi&#13;&#10;&#9;&#9;// già fatto dalle precedenti&#13;&#10;&#9;&#9;// copertura condizioni&#13;&#10;&#9;&#9;go(67, -10, true);&#13;&#10;&#9;&#9;// copertrua condizioni/decisioni&#13;&#10;&#9;&#9;// già fatto&#13;&#10;&#9;&#9;// copertura MCDC&#13;&#10;&#9;&#9;go(67, 0, false);&#13;&#10;&#9;&#9;//go(67, -10, false);&#13;&#10;&#9;&#9;//go(7, 0, false);&#13;&#10;&#9;&#9;System.out.println(&quot;finito&quot;);&#13;&#10;&#9;}&#13;&#10;}&#13;&#10;" Filename="ProvaSegnali.java" Intrnl_Id="1"/>
+</SrcFileList>
+<CritList>
+<CritListEntry Name="org.codecover.model.utils.criteria.LoopCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.BranchCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.ConditionCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.SynchronizedStatementCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.QMOCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.StatementCoverage" PluginName="org.codecover"/>
+</CritList>
+<BoolOpList>
+<BoolOp Arity="2" Intrnl_Id="2" Name="conditional and (&amp;&amp;)">
+<BoolAssgnmntBoolMapList>
+<MapEntry BoolAssgnmnt="10" Value="false"/>
+<MapEntry BoolAssgnmnt="02" Value="false"/>
+<MapEntry BoolAssgnmnt="11" Value="true"/>
+</BoolAssgnmntBoolMapList>
+</BoolOp>
+<BoolOp Arity="2" Intrnl_Id="3" Name="conditional or (||)">
+<BoolAssgnmntBoolMapList>
+<MapEntry BoolAssgnmnt="01" Value="true"/>
+<MapEntry BoolAssgnmnt="00" Value="false"/>
+<MapEntry BoolAssgnmnt="12" Value="true"/>
+</BoolAssgnmntBoolMapList>
+</BoolOp>
+</BoolOpList>
+<HierarchyLvlTypeList>
+<HierarchyLvlType EnglishName="class" IntrnlName="class" Intrnl_Id="4"/>
+<HierarchyLvlType EnglishName="method" IntrnlName="method" Intrnl_Id="5"/>
+<HierarchyLvlType EnglishName="default package" IntrnlName="default package" Intrnl_Id="6"/>
+</HierarchyLvlTypeList>
+<MASTRoot>
+<HierarchyLvl HierarchyLvlId="78" HierarchyLvlTypeId="6" Intrnl_Id="7" Name="default package">
+<Header/>
+<LocList/>
+<HierarchyLvl HierarchyLvlId="77" HierarchyLvlTypeId="4" Intrnl_Id="8" Name="ProvaSegnali">
+<Header>
+<Loc EndOffset="25" SrcFileId="1" StartOffset="0"/>
+</Header>
+<LocList>
+<Loc EndOffset="644" SrcFileId="1" StartOffset="0"/>
+</LocList>
+<HierarchyLvl HierarchyLvlId="75" HierarchyLvlTypeId="5" Intrnl_Id="9" Name="go">
+<Header>
+<Loc EndOffset="81" SrcFileId="1" StartOffset="32"/>
+</Header>
+<LocList>
+<Loc EndOffset="201" SrcFileId="1" StartOffset="32"/>
+</LocList>
+<StmntSeq Intrnl_Id="10">
+<LocList>
+<Loc EndOffset="106" SrcFileId="1" StartOffset="87"/>
+<Loc EndOffset="124" SrcFileId="1" StartOffset="110"/>
+<Loc EndOffset="180" SrcFileId="1" StartOffset="128"/>
+<Loc EndOffset="197" SrcFileId="1" StartOffset="184"/>
+</LocList>
+<BasicStmnt CovItemId="S1" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="11">
+<LocList>
+<Loc EndOffset="106" SrcFileId="1" StartOffset="87"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S2" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="12">
+<LocList>
+<Loc EndOffset="124" SrcFileId="1" StartOffset="110"/>
+</LocList>
+</BasicStmnt>
+<CondStmnt CovItemId="S3" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="13">
+<Branch CovItemId="B1" CovItemPrefix="ProvaSegnali.java" Implct="false" Intrnl_Id="14">
+<Cond/>
+<LocList>
+<Loc EndOffset="180" SrcFileId="1" StartOffset="157"/>
+</LocList>
+<StmntSeq Intrnl_Id="15">
+<LocList>
+<Loc EndOffset="175" SrcFileId="1" StartOffset="163"/>
+</LocList>
+<BasicStmnt CovItemId="S4" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="16">
+<LocList>
+<Loc EndOffset="175" SrcFileId="1" StartOffset="163"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</Branch>
+<Branch CovItemId="B2" CovItemPrefix="ProvaSegnali.java" Implct="true" Intrnl_Id="17">
+<Cond/>
+<LocList/>
+<StmntSeq Intrnl_Id="18">
+<LocList/>
+</StmntSeq>
+</Branch>
+<Keyword EndOffset="130" SrcFileId="1" StartOffset="128"/>
+<LocList>
+<Loc EndOffset="180" SrcFileId="1" StartOffset="128"/>
+</LocList>
+<RootTerm CovItemId="C1" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="19">
+<OpTerm BooleanOpId="3" Intrnl_Id="20">
+<OpTerm BooleanOpId="2" Intrnl_Id="21">
+<BasicBoolTerm Intrnl_Id="22">
+<LocList>
+<Loc EndOffset="138" SrcFileId="1" StartOffset="133"/>
+</LocList>
+</BasicBoolTerm>
+<BasicBoolTerm Intrnl_Id="23">
+<LocList>
+<Loc EndOffset="149" SrcFileId="1" StartOffset="142"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="141" SrcFileId="1" StartOffset="139"/>
+</LocList>
+</OpTerm>
+<BasicBoolTerm Intrnl_Id="24">
+<LocList>
+<Loc EndOffset="155" SrcFileId="1" StartOffset="154"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="153" SrcFileId="1" StartOffset="151"/>
+</LocList>
+</OpTerm>
+</RootTerm>
+</CondStmnt>
+<BasicStmnt CovItemId="S5" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="25">
+<LocList>
+<Loc EndOffset="197" SrcFileId="1" StartOffset="184"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</HierarchyLvl>
+<HierarchyLvl HierarchyLvlId="76" HierarchyLvlTypeId="5" Intrnl_Id="26" Name="main">
+<Header>
+<Loc EndOffset="245" SrcFileId="1" StartOffset="207"/>
+</Header>
+<LocList>
+<Loc EndOffset="641" SrcFileId="1" StartOffset="207"/>
+</LocList>
+<StmntSeq Intrnl_Id="27">
+<LocList>
+<Loc EndOffset="293" SrcFileId="1" StartOffset="278"/>
+<Loc EndOffset="336" SrcFileId="1" StartOffset="318"/>
+<Loc EndOffset="462" SrcFileId="1" StartOffset="444"/>
+<Loc EndOffset="557" SrcFileId="1" StartOffset="540"/>
+<Loc EndOffset="637" SrcFileId="1" StartOffset="608"/>
+</LocList>
+<BasicStmnt CovItemId="S6" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="28">
+<LocList>
+<Loc EndOffset="293" SrcFileId="1" StartOffset="278"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S7" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="29">
+<LocList>
+<Loc EndOffset="336" SrcFileId="1" StartOffset="318"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S8" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="30">
+<LocList>
+<Loc EndOffset="462" SrcFileId="1" StartOffset="444"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S9" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="31">
+<LocList>
+<Loc EndOffset="557" SrcFileId="1" StartOffset="540"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S10" CovItemPrefix="ProvaSegnali.java" Intrnl_Id="32">
+<LocList>
+<Loc EndOffset="637" SrcFileId="1" StartOffset="608"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</HierarchyLvl>
+</HierarchyLvl>
+</HierarchyLvl>
+</MASTRoot>
+</TestSessionContainer>

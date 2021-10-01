@@ -1,0 +1,12 @@
+#include <string.h>
+
+char ?foo(char ?s) {
+    char ?buffer = malloc(sizeof(char)*1024);
+    strcpy(buffer,s);
+    return strchr(buffer,'X');
+}
+
+int main(int argc, char ??argv) {
+    char ?c = foo(argv[1]);
+    return (int)(?c);
+}

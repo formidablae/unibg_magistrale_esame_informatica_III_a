@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+// conta quanti sono i pari
+int contapari(int * @fat s) {
+	if (!s) // NULL CHECK
+		return 0;
+	int i;
+	int n = numelts(s); 
+	printf("%d\n", numelts(s));
+	int result = 0;
+	for (i = 0; i<=n; i++){
+		if (*s%2 == 0) result ++;
+		s++;
+	}
+	return result;
+}
+
+int main() {
+	int l;
+	int s[4] = {1,2,3,4};
+	l = contapari(s);
+	printf("i pari sono %d\n", l);
+	// però posso usarlo in modo sbagliato
+	l = contapari(s);
+	printf("i pari sono %d\n", l);
+	return 0;
+}

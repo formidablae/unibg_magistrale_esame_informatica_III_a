@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int mstrlen(char * @zeroterm s){
+  char * @zeroterm p = s;
+  int i;
+  for(i = 0; /**p*/ ; i++ ){ 
+     p++;  
+  }
+  return i;
+}
+
+int main(){
+  
+   char a[6] @zeroterm = "pippo";
+   printf("s:%s l:%d",a,mstrlen(a));    
+
+   char b[4] @zeroterm = "pip";
+   printf("s:%s l:%d",b,mstrlen(b));    
+
+
+}

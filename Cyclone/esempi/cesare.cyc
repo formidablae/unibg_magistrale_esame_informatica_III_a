@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+// cifra la string s con cifrario di cesare
+char* cifra(char * @zeroterm s){
+	int dim = strlen(s);
+	printf("%d\n",dim);
+	char? result = malloc((dim+1)*sizeof(char));
+	printf("%d\n", numelts(result));
+// inefficiente
+	for(int i = 0; i < dim; i++){
+		printf("%d\n", i);		
+		result[i] = s[i];
+	}
+/*	char* ps = s;
+	char? pr = result;
+	for(int i = 0; i < dim; i++){
+		*pr = *ps;
+		printf("%d %c %c",i,*pr, *ps);
+		pr++; ps++;
+	}*/
+	//printf("%s",result);	
+	return result;
+}
+
+
+int main(){
+	char prova[] @zeroterm = "questa è una prova";
+	//cifra(prova);
+	printf("%s",cifra(prova));
+	return 0;
+}
+

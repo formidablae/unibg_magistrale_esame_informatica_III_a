@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int mystrlen(const char * @zeroterm s) {
+	if (!s) return 0;
+	int i;
+	for (i = 0; s[i] != 0; i++);
+	return i;
+}
+
+int main() {
+	int l;
+	char s[6] @zeroterm = "pippo";
+	l = mystrlen(s);
+	printf("la stringa %s lunga %d\n", s, l);
+	/** con zero esplicito*/
+	char b[] = { 'c', 'i', 'a', 'o', 0 };
+	l = mystrlen(b);
+	printf("la stringa %s lunga %d\n", b, l);
+
+}

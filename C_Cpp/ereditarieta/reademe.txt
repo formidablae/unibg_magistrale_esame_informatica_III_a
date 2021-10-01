@@ -1,0 +1,1 @@
+alcuniproblemi di ereditarietà: pubblica e privata, con visibilità diverse etc.

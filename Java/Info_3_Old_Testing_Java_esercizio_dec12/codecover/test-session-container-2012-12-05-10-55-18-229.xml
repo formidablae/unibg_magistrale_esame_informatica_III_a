@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1354701318213" TestSessionContainerId="8cf5a9ba-a327-4da6-a383-daf9a10aa379" version="1.0">
+<SrcFileList>
+<SrcFile Content="import static org.junit.Assert.*;&#13;&#10;&#13;&#10;import org.junit.Test;&#13;&#10;&#13;&#10;&#13;&#10;public class CalcoloTest {&#13;&#10;&#13;&#10;&#9;@Test&#13;&#10;&#9;public void testM_copInstruzioni() {&#13;&#10;&#9;&#9;Calcolo.m(0, 0, false);&#13;&#10;&#9;}&#13;&#10;&#13;&#10;}&#13;&#10;" Filename="CalcoloTest.java" Intrnl_Id="1"/>
+</SrcFileList>
+<CritList>
+<CritListEntry Name="org.codecover.model.utils.criteria.BranchCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.ConditionCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.QMOCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.StatementCoverage" PluginName="org.codecover"/>
+</CritList>
+<BoolOpList/>
+<HierarchyLvlTypeList>
+<HierarchyLvlType EnglishName="class" IntrnlName="class" Intrnl_Id="2"/>
+<HierarchyLvlType EnglishName="method" IntrnlName="method" Intrnl_Id="3"/>
+<HierarchyLvlType EnglishName="default package" IntrnlName="default package" Intrnl_Id="4"/>
+</HierarchyLvlTypeList>
+<MASTRoot>
+<HierarchyLvl HierarchyLvlId="5" HierarchyLvlTypeId="4" Intrnl_Id="5" Name="default package">
+<Header/>
+<LocList/>
+<HierarchyLvl HierarchyLvlId="4" HierarchyLvlTypeId="2" Intrnl_Id="6" Name="CalcoloTest">
+<Header>
+<Loc EndOffset="89" SrcFileId="1" StartOffset="65"/>
+</Header>
+<LocList>
+<Loc EndOffset="176" SrcFileId="1" StartOffset="65"/>
+</LocList>
+<HierarchyLvl HierarchyLvlId="3" HierarchyLvlTypeId="3" Intrnl_Id="7" Name="testM_copInstruzioni">
+<Header>
+<Loc EndOffset="138" SrcFileId="1" StartOffset="96"/>
+</Header>
+<LocList>
+<Loc EndOffset="171" SrcFileId="1" StartOffset="96"/>
+</LocList>
+<StmntSeq Intrnl_Id="8">
+<LocList>
+<Loc EndOffset="167" SrcFileId="1" StartOffset="144"/>
+</LocList>
+<BasicStmnt CovItemId="S1" CovItemPrefix="CalcoloTest.java" Intrnl_Id="9">
+<LocList>
+<Loc EndOffset="167" SrcFileId="1" StartOffset="144"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</HierarchyLvl>
+</HierarchyLvl>
+</HierarchyLvl>
+</MASTRoot>
+</TestSessionContainer>

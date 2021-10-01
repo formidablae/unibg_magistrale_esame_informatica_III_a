@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* restituisce il max in un array di caratteri
+ *
+ * p: array di dimensione n
+ */
+int getMax(int ? p) {
+	int max = *p;
+	int n = numelts(p);
+	int i = 0;
+	int ? q = p;
+	while (i < n) {
+		if (*q > max)	max = *(q);
+		i++;
+		q++;
+	}
+	return max;
+}
+
+int main(void) {
+	int a[4] = {1,2,3,4};
+	printf("max %d", getMax(a));
+	printf("max %d", getMax(a));
+	return EXIT_SUCCESS;
+}

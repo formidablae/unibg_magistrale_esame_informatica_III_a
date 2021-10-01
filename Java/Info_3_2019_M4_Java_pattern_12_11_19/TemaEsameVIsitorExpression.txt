@@ -1,0 +1,28 @@
+** Visitor di espressioni ***
+
+Una espressione aritmetica può essere:
+- o un numero (intero)
+- o la somma di due espressioni
+- o il prodotto di due espressioni
+
+**scrivi le classi per le espressioni
+
+Voglio fare come operazione, il valore numerico 
+di una espressione
+1. prima soluzione: implemento un metodo valore nelle classi
+espressione
+
+2. usando il visitor (il visit e l'accept ritornano un intero).
+* le espressioni implementeranno il Visitable
+e avranno un metodo accept
+* il calcolo del valore implementa il Visitor e avrà
+un metodo visit che calcola il valore e lo restituisce
+( e.accept(v))
+
+3. in un main prova a costruire l'espressione
+(3 + 2) * 10
+e calcolare il valore nei due modi
+
+
+
+

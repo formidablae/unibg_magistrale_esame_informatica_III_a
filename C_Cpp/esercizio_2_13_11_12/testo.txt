@@ -1,0 +1,27 @@
+2. Scrivi una classe Complex Number – overload di operatori
+Scrivi una classe complex che rappresenta numeri 
+complessi. Complex ha tre costruttori (senza nulla, costruisce lo 0, 
+con un argomento per numeri reali, e con due argomenti, parte reale e 
+immaginaria). Prova con tre costruttori separati o con uno solo e 
+argomenti di default.
+Scrivi anche un metodo che restituisce la parte reale e immaginaria 
+di un numero complesso.
+
+Overload di operatori:
+In C++ si posso ridefinire anche operatori non solo metodi. Ad esempio, posso ridefinire gli operatori +, - , ... in questo modo:
+
+complex operator+(const complex & )const;
+complex operator-(const complex & )const;
+complex &operator=(const complex & );
+complex operator*(const complex &)const;
+bool operator==(const complex &)const;
+bool operator!=(const complex &)const;
+         
+Prova ad implementare questi operatori.
+Posso anche ridefinire gli operatori << e >> (che però appartengono alla classe ostream e istream) in questo modo:
+//overloading di estrazione dello streaming
+  friend ostream &operator<<( ostream & , const complex  &);
+//overloading di immissione dello streaming
+  friend istream &operator>>( istream &, complex & );
+prova ad implementare << e >>.
+Scrivi un main di prova in cui domandi (>>) 3 numeri complessi fai tutte le operazioni e stampi il risultato.

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1354703049906" TestSessionContainerId="b8fb6ba5-ca27-44ec-858a-2cd890e7a687" version="1.0">
+<SrcFileList>
+<SrcFile Content="public class Calcolo {&#13;&#10;&#13;&#10;&#9;static void m(int x, int y, boolean proceed) {&#13;&#10;&#9;&#9;int h = x * y;&#13;&#10;&#9;&#9;if ((h&gt;100 &amp;&amp;  proceed) || x == 0){&#13;&#10;&#9;&#9;&#9;y++;&#13;&#10;&#9;&#9;}&#13;&#10;&#9;}&#13;&#10;&#13;&#10;}&#13;&#10;" Filename="Calcolo.java" Intrnl_Id="1"/>
+</SrcFileList>
+<CritList>
+<CritListEntry Name="org.codecover.model.utils.criteria.BranchCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.ConditionCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.QMOCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.StatementCoverage" PluginName="org.codecover"/>
+</CritList>
+<BoolOpList>
+<BoolOp Arity="2" Intrnl_Id="2" Name="conditional and (&amp;&amp;)">
+<BoolAssgnmntBoolMapList>
+<MapEntry BoolAssgnmnt="10" Value="false"/>
+<MapEntry BoolAssgnmnt="02" Value="false"/>
+<MapEntry BoolAssgnmnt="11" Value="true"/>
+</BoolAssgnmntBoolMapList>
+</BoolOp>
+<BoolOp Arity="2" Intrnl_Id="3" Name="conditional or (||)">
+<BoolAssgnmntBoolMapList>
+<MapEntry BoolAssgnmnt="01" Value="true"/>
+<MapEntry BoolAssgnmnt="00" Value="false"/>
+<MapEntry BoolAssgnmnt="12" Value="true"/>
+</BoolAssgnmntBoolMapList>
+</BoolOp>
+</BoolOpList>
+<HierarchyLvlTypeList>
+<HierarchyLvlType EnglishName="class" IntrnlName="class" Intrnl_Id="4"/>
+<HierarchyLvlType EnglishName="method" IntrnlName="method" Intrnl_Id="5"/>
+<HierarchyLvlType EnglishName="default package" IntrnlName="default package" Intrnl_Id="6"/>
+</HierarchyLvlTypeList>
+<MASTRoot>
+<HierarchyLvl HierarchyLvlId="52" HierarchyLvlTypeId="6" Intrnl_Id="7" Name="default package">
+<Header/>
+<LocList/>
+<HierarchyLvl HierarchyLvlId="51" HierarchyLvlTypeId="4" Intrnl_Id="8" Name="Calcolo">
+<Header>
+<Loc EndOffset="20" SrcFileId="1" StartOffset="0"/>
+</Header>
+<LocList>
+<Loc EndOffset="153" SrcFileId="1" StartOffset="0"/>
+</LocList>
+<HierarchyLvl HierarchyLvlId="50" HierarchyLvlTypeId="5" Intrnl_Id="9" Name="m">
+<Header>
+<Loc EndOffset="71" SrcFileId="1" StartOffset="27"/>
+</Header>
+<LocList>
+<Loc EndOffset="148" SrcFileId="1" StartOffset="27"/>
+</LocList>
+<StmntSeq Intrnl_Id="10">
+<LocList>
+<Loc EndOffset="91" SrcFileId="1" StartOffset="77"/>
+<Loc EndOffset="144" SrcFileId="1" StartOffset="95"/>
+</LocList>
+<BasicStmnt CovItemId="S1" CovItemPrefix="Calcolo.java" Intrnl_Id="11">
+<LocList>
+<Loc EndOffset="91" SrcFileId="1" StartOffset="77"/>
+</LocList>
+</BasicStmnt>
+<CondStmnt CovItemId="S2" CovItemPrefix="Calcolo.java" Intrnl_Id="12">
+<Branch CovItemId="B1" CovItemPrefix="Calcolo.java" Implct="false" Intrnl_Id="13">
+<Cond/>
+<LocList>
+<Loc EndOffset="144" SrcFileId="1" StartOffset="129"/>
+</LocList>
+<StmntSeq Intrnl_Id="14">
+<LocList>
+<Loc EndOffset="139" SrcFileId="1" StartOffset="135"/>
+</LocList>
+<BasicStmnt CovItemId="S3" CovItemPrefix="Calcolo.java" Intrnl_Id="15">
+<LocList>
+<Loc EndOffset="139" SrcFileId="1" StartOffset="135"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</Branch>
+<Branch CovItemId="B2" CovItemPrefix="Calcolo.java" Implct="true" Intrnl_Id="16">
+<Cond/>
+<LocList/>
+<StmntSeq Intrnl_Id="17">
+<LocList/>
+</StmntSeq>
+</Branch>
+<Keyword EndOffset="97" SrcFileId="1" StartOffset="95"/>
+<LocList>
+<Loc EndOffset="144" SrcFileId="1" StartOffset="95"/>
+</LocList>
+<RootTerm CovItemId="C1" CovItemPrefix="Calcolo.java" Intrnl_Id="18">
+<OpTerm BooleanOpId="3" Intrnl_Id="19">
+<OpTerm BooleanOpId="2" Intrnl_Id="20">
+<BasicBoolTerm Intrnl_Id="21">
+<LocList>
+<Loc EndOffset="105" SrcFileId="1" StartOffset="100"/>
+</LocList>
+</BasicBoolTerm>
+<BasicBoolTerm Intrnl_Id="22">
+<LocList>
+<Loc EndOffset="117" SrcFileId="1" StartOffset="110"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="108" SrcFileId="1" StartOffset="106"/>
+</LocList>
+</OpTerm>
+<BasicBoolTerm Intrnl_Id="23">
+<LocList>
+<Loc EndOffset="128" SrcFileId="1" StartOffset="122"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="121" SrcFileId="1" StartOffset="119"/>
+</LocList>
+</OpTerm>
+</RootTerm>
+</CondStmnt>
+</StmntSeq>
+</HierarchyLvl>
+</HierarchyLvl>
+</HierarchyLvl>
+</MASTRoot>
+</TestSessionContainer>

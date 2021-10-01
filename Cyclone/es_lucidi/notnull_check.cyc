@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void f(int @ x){
+*x = 10;
+return;
+}
+
+int main(){
+    //int * @notnull p;
+    int @ p;
+    int x = 1;
+    int * l;
+    l = &x;
+    if (4 > 3) l =NULL;
+    p = (int@)l;
+    f(p);
+    printf("%d",x);
+	return 0;
+}
+
+

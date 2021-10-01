@@ -1,0 +1,1 @@
+Uso dei moduli con variabili static

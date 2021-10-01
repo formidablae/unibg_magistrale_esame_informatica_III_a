@@ -1,0 +1,29 @@
+typedef struct { 
+   double x; 
+   double y; 
+} point;
+
+struct nodopoint{ 
+   point p;
+   struct nodopoint* next; 
+} nodopoint;
+
+typedef struct nodopoint listNode;
+
+void delete( listNode *`H s){
+  listNode *`H p = s;
+
+  while(p != NULL){
+    listNode * q = p->next;
+    // free
+    p = q;
+  }
+}
+
+
+
+int main(){
+   listNode* p = calloc(1,sizeof(listNode));
+   delete(p);
+   return 0;
+}

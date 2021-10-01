@@ -1,0 +1,32 @@
+[CodePro v6.1 report, generated Wed Nov 30 10:24:07 CET 2011]
+-------------------------------------------------------------------------------
+OVERALL COVERAGE SUMMARY:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+75%  (47/63)!	51%  (192/379)!	40%  (1702/4251)!	41%  (400,3/972)!	all classes
+
+OVERALL STATS SUMMARY:
+
+total packages:	13
+total classes:	63
+total methods:	379
+total executable files:	48
+total executable lines:	972
+
+COVERAGE BREAKDOWN BY PACKAGE:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+0%   (0/2)!	0%   (0/16)!	0%   (0/275)!	0%   (0/56)!	org.junit.internal
+0%   (0/3)!	0%   (0/7)!	0%   (0/89)!	0%   (0/23)!	org.junit.internal.requests
+0%   (0/3)!	0%   (0/19)!	0%   (0/368)!	0%   (0/89)!	org.junit.internal.runners
+50%  (1/2)!	7%   (4/54)!	5%   (25/505)!	5%   (7,5/139)!	org.junit
+100% (2/2)	60%  (3/5)!	27%  (10/37)!	31%  (4/13)!	org.junit.internal.runners.model
+50%  (3/6)!	40%  (6/15)!	32%  (98/306)!	38%  (26,5/69)!	org.junit.internal.runners.statements
+100% (9/9)	43%  (35/82)!	38%  (277/723)!	39%  (57,7/149)!	org.junit.runner
+86%  (6/7)!	64%  (21/33)!	44%  (192/433)!	56%  (44/78)!	org.junit.runners.model
+75%  (6/8)!	80%  (20/25)	66%  (168/255)!	66%  (38/58)!	org.junit.internal.builders
+100% (8/8)	92%  (67/73)	72%  (652/904)!	75%  (150,8/201)!	org.junit.runners
+88%  (7/8)!	64%  (21/33)!	72%  (160/221)!	59%  (31,7/54)!	org.junit.runner.notification
+100% (3/3)	82%  (9/11)	85%  (85/100)	91%  (29/32)	default package
+100% (2/2)	100% (6/6)	100% (35/35)	100% (11/11)	org.junit.runner.manipulation
+-------------------------------------------------------------------------------

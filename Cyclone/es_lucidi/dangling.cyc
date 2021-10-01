@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+char* uno() {
+	//char uno[4] @zeroterm = "uno";
+	char* uno = malloc(4);
+	return uno;
+}
+
+int main() {
+	printf("1 è %s\n", uno());
+}

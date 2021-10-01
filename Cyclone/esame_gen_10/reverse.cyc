@@ -1,0 +1,41 @@
+/*
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// NON VA BENE void stampaNR(char *s) {
+
+//void stampaNR_zt(const char* @zeroterm s) {
+void stampaNR_zt(const char* s) {
+	int l = strlen(s);
+	int i = l - 1;
+	for (; i >= 0; i--) {
+		printf("%c", s[i]);
+	}
+	printf("\n");
+}
+
+void stampaNR_fat(const char? @nozeroterm s) {
+	int l = strlen(s);
+	int i = l - 1;
+	for (; i >= 0; i--) {
+		printf("%c", s[i]);
+	}
+	printf("\n");
+}
+
+//void stampaNR_n(tag_t<`n> num,
+//        char *@notnull @numelts(valueof(`n)) p) {
+//}
+
+
+
+int main() {
+	const char * ciao = "ciao";
+	// oppure ciao[5] = "ciao";
+	stampaNR_zt(ciao);
+	stampaNR_fat(ciao);
+	return EXIT_SUCCESS;
+}

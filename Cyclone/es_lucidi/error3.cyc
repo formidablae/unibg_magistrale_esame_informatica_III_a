@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+   int x = 2;
+   int *ptr = &x; 
+
+   if (x == 2){
+     ptr = 10000;
+   }
+	
+	// se cyclone capisce che è sempre nullo -> fallimento in compilazione
+	// se cyclone capisce che non è mai nullo -> accetta così come è
+	// se cycklone sospetta che possa essere nullo -> mette un null check
+
+	if (ptr == NULL)
+		printf("il puntatore è null %p\n", ptr);
+		
+	printf("%d\n",*ptr); // ->
+   // if (ptr) printf("%d\n",*ptr);
+	// else throw exception
+	
+   return 1;
+} 

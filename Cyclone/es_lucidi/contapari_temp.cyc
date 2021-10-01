@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+//int contapari(int* c, int n){ // in C
+int contapari(int ? cf){ // in C
+	int i = 0;
+	int ris = 0;
+	while(i < numelts(cf)){
+		if (cf[i] %2 == 0)  ris++;
+		i++;
+	}
+	return ris;
+}
+
+int main(void){
+	int ciao[5] = {1,2,3,4,0};
+	printf("%d\n",contapari(ciao));
+	int h[3]={1,2,3};
+	printf("%d\n",contapari(h));
+	return 0;
+}
+
+

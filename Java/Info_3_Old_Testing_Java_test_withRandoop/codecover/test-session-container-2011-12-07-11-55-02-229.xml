@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1323255302209" TestSessionContainerId="c1ae4adf-3a56-4c24-aa64-274b2e851f22" version="1.0">
+<SrcFileList>
+<SrcFile Content="package info3;&#13;&#10;&#13;&#10;public class Prova {&#13;&#10;&#13;&#10;&#9;public int foo(int a, int b) {&#13;&#10;&#9;&#9;if (a &gt; 0 &amp;&amp; b == 5)&#13;&#10;&#9;&#9;&#9;return 7;&#13;&#10;&#9;&#9;else if (a == 8)&#13;&#10;&#9;&#9;&#9;return 9;&#13;&#10;&#9;&#9;else&#13;&#10;&#9;&#9;&#9;return 200;&#13;&#10;&#9;}&#13;&#10;&#13;&#10;}&#13;&#10;" Filename="Prova.java" Intrnl_Id="1"/>
+</SrcFileList>
+<CritList>
+<CritListEntry Name="org.codecover.model.utils.criteria.StatementCoverage" PluginName="org.codecover"/>
+</CritList>
+<BoolOpList/>
+<HierarchyLvlTypeList>
+<HierarchyLvlType EnglishName="package" IntrnlName="package" Intrnl_Id="2"/>
+<HierarchyLvlType EnglishName="class" IntrnlName="class" Intrnl_Id="3"/>
+<HierarchyLvlType EnglishName="method" IntrnlName="method" Intrnl_Id="4"/>
+<HierarchyLvlType EnglishName="default package" IntrnlName="default package" Intrnl_Id="5"/>
+</HierarchyLvlTypeList>
+<MASTRoot>
+<HierarchyLvl HierarchyLvlId="89" HierarchyLvlTypeId="5" Intrnl_Id="6" Name="default package">
+<Header/>
+<LocList/>
+<HierarchyLvl HierarchyLvlId="88" HierarchyLvlTypeId="2" Intrnl_Id="7" Name="info3">
+<Header/>
+<LocList/>
+<HierarchyLvl HierarchyLvlId="87" HierarchyLvlTypeId="3" Intrnl_Id="8" Name="Prova">
+<Header>
+<Loc EndOffset="36" SrcFileId="1" StartOffset="18"/>
+</Header>
+<LocList>
+<Loc EndOffset="178" SrcFileId="1" StartOffset="18"/>
+</LocList>
+<HierarchyLvl HierarchyLvlId="86" HierarchyLvlTypeId="4" Intrnl_Id="9" Name="foo">
+<Header>
+<Loc EndOffset="71" SrcFileId="1" StartOffset="43"/>
+</Header>
+<LocList>
+<Loc EndOffset="173" SrcFileId="1" StartOffset="43"/>
+</LocList>
+<StmntSeq Intrnl_Id="10">
+<LocList>
+<Loc EndOffset="169" SrcFileId="1" StartOffset="77"/>
+</LocList>
+<CondStmnt CovItemId="S1" CovItemPrefix="info3.Prova.java" Intrnl_Id="11">
+<Branch CovItemId="B1" CovItemPrefix="info3.Prova.java" Implct="false" Intrnl_Id="12">
+<Cond/>
+<LocList>
+<Loc EndOffset="111" SrcFileId="1" StartOffset="102"/>
+</LocList>
+<StmntSeq Intrnl_Id="13">
+<LocList>
+<Loc EndOffset="111" SrcFileId="1" StartOffset="102"/>
+</LocList>
+<BasicStmnt CovItemId="S2" CovItemPrefix="info3.Prova.java" Intrnl_Id="14">
+<LocList>
+<Loc EndOffset="111" SrcFileId="1" StartOffset="102"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</Branch>
+<Branch CovItemId="B2" CovItemPrefix="info3.Prova.java" Implct="false" Intrnl_Id="15">
+<Cond>
+<Loc EndOffset="119" SrcFileId="1" StartOffset="115"/>
+</Cond>
+<LocList>
+<Loc EndOffset="169" SrcFileId="1" StartOffset="120"/>
+</LocList>
+<StmntSeq Intrnl_Id="16">
+<LocList>
+<Loc EndOffset="169" SrcFileId="1" StartOffset="120"/>
+</LocList>
+<CondStmnt CovItemId="S3" CovItemPrefix="info3.Prova.java" Intrnl_Id="17">
+<Branch CovItemId="B3" CovItemPrefix="info3.Prova.java" Implct="false" Intrnl_Id="18">
+<Cond/>
+<LocList>
+<Loc EndOffset="145" SrcFileId="1" StartOffset="136"/>
+</LocList>
+<StmntSeq Intrnl_Id="19">
+<LocList>
+<Loc EndOffset="145" SrcFileId="1" StartOffset="136"/>
+</LocList>
+<BasicStmnt CovItemId="S4" CovItemPrefix="info3.Prova.java" Intrnl_Id="20">
+<LocList>
+<Loc EndOffset="145" SrcFileId="1" StartOffset="136"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</Branch>
+<Branch CovItemId="B4" CovItemPrefix="info3.Prova.java" Implct="false" Intrnl_Id="21">
+<Cond>
+<Loc EndOffset="153" SrcFileId="1" StartOffset="149"/>
+</Cond>
+<LocList>
+<Loc EndOffset="169" SrcFileId="1" StartOffset="158"/>
+</LocList>
+<StmntSeq Intrnl_Id="22">
+<LocList>
+<Loc EndOffset="169" SrcFileId="1" StartOffset="158"/>
+</LocList>
+<BasicStmnt CovItemId="S5" CovItemPrefix="info3.Prova.java" Intrnl_Id="23">
+<LocList>
+<Loc EndOffset="169" SrcFileId="1" StartOffset="158"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</Branch>
+<Keyword EndOffset="122" SrcFileId="1" StartOffset="120"/>
+<LocList>
+<Loc EndOffset="169" SrcFileId="1" StartOffset="120"/>
+</LocList>
+</CondStmnt>
+</StmntSeq>
+</Branch>
+<Keyword EndOffset="79" SrcFileId="1" StartOffset="77"/>
+<LocList>
+<Loc EndOffset="169" SrcFileId="1" StartOffset="77"/>
+</LocList>
+</CondStmnt>
+</StmntSeq>
+</HierarchyLvl>
+</HierarchyLvl>
+</HierarchyLvl>
+</HierarchyLvl>
+</MASTRoot>
+</TestSessionContainer>

@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+// restituisce la posizione del primo 0 in a 
+int primo0(int* @notnull @fat a, int n){
+	printf("%d\n ", numelts(a));
+	// eccezione a[n] = 90;
+	for(int i = 0; i < n; i++){
+		if (*(a+i) == 0) return i;
+	}
+	return -1;
+}
+// conta pari con numelts
+int contaPari(int ? array){
+	int res = 0;
+	for(int i = 0; i < numelts(array); i++){
+		//if (array[i] %2 == 0) res ++;
+		// equivalente
+		// if *(array+i) %2 == 0) res ++;
+		
+		// più efficente?
+		if (*array %2) == 0 res ++;
+		array ++;
+	} 
+	return res;
+}
+
+
+int main(){
+	int dati[] = {1,4,5,0};
+	printf("%d\n",primo0(dati,4));
+	printf("%d\n",contaPari(dati));
+	return 0;
+}

@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int mstrlen(char * @fat s){
+  char ? p = s;
+  int i;
+  for(i = 0; *p && i < numelts(s); i++ ){ 
+     p++;  
+  }
+  return i;
+}
+
+int main(){
+  
+   char a[6] @zeroterm = "pippo";
+  
+   printf("s:%s l:%d",a,mstrlen((char?)a));    
+
+//   char ? b = "pip";
+//   printf("s:%s l:%d",b,mstrlen(b));    
+
+
+}

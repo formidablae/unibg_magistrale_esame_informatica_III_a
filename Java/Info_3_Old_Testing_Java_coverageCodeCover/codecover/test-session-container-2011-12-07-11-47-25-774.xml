@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1323254845755" TestSessionContainerId="7d849a2d-a8fe-417d-a357-0dc5266635e1" version="1.0">
+<SrcFileList>
+<SrcFile Content="&#13;&#10;public class Account {&#13;&#10;&#13;&#10;&#9;private int balance;&#13;&#10;&#13;&#10;&#9;Account(int val){&#13;&#10;&#9;&#9;assert val &gt;= 0;&#13;&#10;&#9;&#9;balance = val;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#9;void deposit(int amount){&#13;&#10;&#9;&#9;balance += amount;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#9;int getBalance(){&#13;&#10;&#9;&#9;return balance;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#9;void withdraw(int amount){&#13;&#10;&#9;&#9;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;}&#13;&#10;" Filename="Account.java" Intrnl_Id="1"/>
+</SrcFileList>
+<CritList>
+<CritListEntry Name="org.codecover.model.utils.criteria.LoopCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.BranchCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.ConditionCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.SynchronizedStatementCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.QMOCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.StatementCoverage" PluginName="org.codecover"/>
+</CritList>
+<BoolOpList/>
+<HierarchyLvlTypeList>
+<HierarchyLvlType EnglishName="class" IntrnlName="class" Intrnl_Id="2"/>
+<HierarchyLvlType EnglishName="method" IntrnlName="method" Intrnl_Id="3"/>
+<HierarchyLvlType EnglishName="default package" IntrnlName="default package" Intrnl_Id="4"/>
+</HierarchyLvlTypeList>
+<MASTRoot>
+<HierarchyLvl HierarchyLvlId="74" HierarchyLvlTypeId="4" Intrnl_Id="5" Name="default package">
+<Header/>
+<LocList/>
+<HierarchyLvl HierarchyLvlId="73" HierarchyLvlTypeId="2" Intrnl_Id="6" Name="Account">
+<Header>
+<Loc EndOffset="22" SrcFileId="1" StartOffset="2"/>
+</Header>
+<LocList>
+<Loc EndOffset="262" SrcFileId="1" StartOffset="2"/>
+</LocList>
+<HierarchyLvl HierarchyLvlId="69" HierarchyLvlTypeId="3" Intrnl_Id="7" Name="Account">
+<Header>
+<Loc EndOffset="70" SrcFileId="1" StartOffset="54"/>
+</Header>
+<LocList>
+<Loc EndOffset="113" SrcFileId="1" StartOffset="54"/>
+</LocList>
+<StmntSeq Intrnl_Id="8">
+<LocList>
+<Loc EndOffset="109" SrcFileId="1" StartOffset="95"/>
+</LocList>
+<BasicStmnt CovItemId="S1" CovItemPrefix="Account.java" Intrnl_Id="9">
+<LocList>
+<Loc EndOffset="109" SrcFileId="1" StartOffset="95"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</HierarchyLvl>
+<HierarchyLvl HierarchyLvlId="70" HierarchyLvlTypeId="3" Intrnl_Id="10" Name="deposit">
+<Header>
+<Loc EndOffset="143" SrcFileId="1" StartOffset="119"/>
+</Header>
+<LocList>
+<Loc EndOffset="170" SrcFileId="1" StartOffset="119"/>
+</LocList>
+<StmntSeq Intrnl_Id="11">
+<LocList>
+<Loc EndOffset="166" SrcFileId="1" StartOffset="148"/>
+</LocList>
+<BasicStmnt CovItemId="S2" CovItemPrefix="Account.java" Intrnl_Id="12">
+<LocList>
+<Loc EndOffset="166" SrcFileId="1" StartOffset="148"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</HierarchyLvl>
+<HierarchyLvl HierarchyLvlId="71" HierarchyLvlTypeId="3" Intrnl_Id="13" Name="getBalance">
+<Header>
+<Loc EndOffset="192" SrcFileId="1" StartOffset="176"/>
+</Header>
+<LocList>
+<Loc EndOffset="216" SrcFileId="1" StartOffset="176"/>
+</LocList>
+<StmntSeq Intrnl_Id="14">
+<LocList>
+<Loc EndOffset="212" SrcFileId="1" StartOffset="197"/>
+</LocList>
+<BasicStmnt CovItemId="S3" CovItemPrefix="Account.java" Intrnl_Id="15">
+<LocList>
+<Loc EndOffset="212" SrcFileId="1" StartOffset="197"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</HierarchyLvl>
+<HierarchyLvl HierarchyLvlId="72" HierarchyLvlTypeId="3" Intrnl_Id="16" Name="withdraw">
+<Header>
+<Loc EndOffset="247" SrcFileId="1" StartOffset="222"/>
+</Header>
+<LocList>
+<Loc EndOffset="256" SrcFileId="1" StartOffset="222"/>
+</LocList>
+</HierarchyLvl>
+</HierarchyLvl>
+</HierarchyLvl>
+</MASTRoot>
+<TestSession Comment="" Date="1323254862518" Name="Dec 7, 2011 11:47:42 AM">
+<TestCase Comment="" Date="1323254862259" Name="AccountTest:testDeposit">
+<CovList>
+<CovPrefix CovItemPrefix="Account.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1323254862261" Name="AccountTest:testAccount">
+<CovList>
+<CovPrefix CovItemPrefix="Account.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S3" Value="2"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="Failure&#10;java.lang.AssertionError&#13;&#10;&#9;at Account.&lt;init&gt;(Account.java:11)&#13;&#10;&#9;at AccountTest.testAccountNeg(AccountTest.java:23)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)&#13;&#10;&#9;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;&#10;&#9;at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)&#13;&#10;&#9;at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)&#13;&#10;&#9;at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)&#13;&#10;&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)&#13;&#10;&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)&#13;&#10;&#9;at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:236)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;&#10;&#9;at org.codecover.juniteclipse.runner.EclipseTestRunner.main(EclipseTestRunner.java:40)" Date="1323254862263" Name="AccountTest:testAccountNeg">
+<CovList/>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1323254862281" Name="AccountTest:testGetBalance">
+<CovList/>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<MetaDataList/>
+</TestSession>
+<TestSession Comment="" Date="1323254925711" Name="Dec 7, 2011 11:48:45 AM">
+<TestCase Comment="" Date="1323254925550" Name="AccountTest:testWithdraw">
+<CovList>
+<CovPrefix CovItemPrefix="Account.java">
+<Cov CovItemId="S1" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1323254925556" Name="AccountTest:testDeposit">
+<CovList>
+<CovPrefix CovItemPrefix="Account.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1323254925558" Name="AccountTest:testAccount">
+<CovList>
+<CovPrefix CovItemPrefix="Account.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S3" Value="2"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="Failure&#10;java.lang.AssertionError&#13;&#10;&#9;at Account.&lt;init&gt;(Account.java:11)&#13;&#10;&#9;at AccountTest.testAccountNeg(AccountTest.java:23)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)&#13;&#10;&#9;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;&#10;&#9;at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)&#13;&#10;&#9;at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)&#13;&#10;&#9;at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)&#13;&#10;&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)&#13;&#10;&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)&#13;&#10;&#9;at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:236)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;&#10;&#9;at org.codecover.juniteclipse.runner.EclipseTestRunner.main(EclipseTestRunner.java:40)" Date="1323254925560" Name="AccountTest:testAccountNeg">
+<CovList/>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1323254925591" Name="AccountTest:testGetBalance">
+<CovList/>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<MetaDataList/>
+</TestSession>
+</TestSessionContainer>
